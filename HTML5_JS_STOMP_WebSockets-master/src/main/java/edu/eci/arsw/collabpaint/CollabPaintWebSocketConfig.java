@@ -37,11 +37,11 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
         //config.enableSimpleBroker("/topic");
         //config.enableStompBrokerRelay("/topic/").setRelayHost("192.168.56.101").setRelayPort(61613);
 	conf.enableStompBrokerRelay("/topic/").setRelayHost("buck.rmq.cloudamqp.com").setRelayPort(61613).
-	setClientLogin("gmmufdcu").
+	setClientLogin("oeuoqwkw").
 }	setClientPasscode("jVSrX2Ft3_VNgdVX4LKoJlW_Nez-S8_Y").
-	setSystemLogin("gmmufdcu").
+	setSystemLogin("oeuoqwkw").
 setSystemPasscode("jVSrX2Ft3_VNgdVX4LKoJlW_NE Z-S8_Y").
-setVirtualHost("gmmufdcu");
+setVirtualHost("oeuoqwkw");
         config.setApplicationDestinationPrefixes("/app");
 	        
     }
