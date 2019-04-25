@@ -160,11 +160,11 @@ http {
 
 ## Autores
 
-* **Andres Giovanne Florez Perez**  ARSW-LAB10 - [andresflorezp] (https://github.com/andresflorezp)
+* **Andres Giovanne Florez Perez**  ARSW-LAB10 - [andresflorezp](https://github.com/andresflorezp)
 
-* **Juan Nicolas Nontoa Caballero**  ARSW-LAB10 - [nontoa] (https://github.com/nontoa)
+* **Juan Nicolas Nontoa Caballero**  ARSW-LAB10 - [nontoa](https://github.com/nontoa)
 
-Consulte también la lista de [colaboradores] (https://github.com/andresflorezp/ARSW-LAB10/graphs/contributors) que participaron en este proyecto.
+Consulte también la lista de [colaboradores](https://github.com/andresflorezp/ARSW-LAB10/graphs/contributors) que participaron en este proyecto.
 
 ## licencia
 
