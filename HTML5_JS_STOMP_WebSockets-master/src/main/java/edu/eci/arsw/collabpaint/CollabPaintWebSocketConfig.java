@@ -1,25 +1,3 @@
-/*
- * Copyright (C) 2016 Pivotal Software, Inc.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-package edu.eci.arsw.collabpaint;
-
-/**
- *
- * @author hcadavid
- */
 import java.util.logging.Logger;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -35,15 +13,14 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
         //config.enableSimpleBroker("/topic");
-        //config.enableStompBrokerRelay("/topic/").setRelayHost("192.168.56.101").setRelayPort(61613);
-	conf.enableStompBrokerRelay("/topic/").setRelayHost("buck.rmq.cloudamqp.com").setRelayPort(61613).
-	setClientLogin("oeuoqwkw").
-}	setClientPasscode("jVSrX2Ft3_VNgdVX4LKoJlW_Nez-S8_Y").
-	setSystemLogin("oeuoqwkw").
-setSystemPasscode("jVSrX2Ft3_VNgdVX4LKoJlW_NE Z-S8_Y").
-setVirtualHost("oeuoqwkw");
-        config.setApplicationDestinationPrefixes("/app");
-	        
+        config.enableStompBrokerRelay("/topic/").setRelayHost("clam.rmq.cloudamqp.com").setRelayPort(61613).
+        setClientLogin("oeuoqwkw").
+        setClientPasscode("psgY4_gYfss-xyAQmwWvg6tAlXIaXHJ_").
+        setSystemLogin("oeuoqwkw").
+        setSystemPasscode("psgY4_gYfss-xyAQmwWvg6tAlXIaXHJ_").
+        setVirtualHost("oeuoqwkw");
+
+        config.setApplicationDestinationPrefixes("/app");        
     }
 
     @Override
