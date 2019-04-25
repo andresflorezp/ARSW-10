@@ -161,7 +161,14 @@ http {
 En su ejercicio, haga una rama llamada 'cloud-based-mom'. En ésta, configure su aplicación para que en lugar de usar el servidor JMeter, haga uso del servicio en RabbitMQ en la nube de CloudAMQP, el cual también es compatible con STOMP. Para esto:
 
 1) Regístrese en la plataforma y cree una instancia gratuita (Lemur).
+
+
+![Incio_lemur](https://user-images.githubusercontent.com/23700749/56738198-b937a180-6731-11e9-9e63-71e9bf1a53c4.PNG)
+
 2) Abra la consola de configuración, y revise las credenciales de acceso.
+
+
+![account_lemur](https://user-images.githubusercontent.com/23700749/56738179-af15a300-6731-11e9-8aa3-b686cd507d40.PNG)
 3) Abra el siguiente ejemplo y revise cómo se configuró el 'relay-broker' para usar el servicio de mensajería de CloudAMQP.
 
 ### Codigo Cambiado
