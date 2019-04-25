@@ -36,7 +36,7 @@ Despues de clonar el archivo para correrlo con:
 
 #### Corriendo el Activemq
 
-![Screenshot](imagenes/Active_mq.png)
+![Active mq](https://user-images.githubusercontent.com/23700749/56735893-542d7d00-672c-11e9-9f2b-a13235078cfe.PNG)
 
 9) Al haber usado la aplicación, consulte nuevamente la consola Web de ActiveMQ, y revise qué información de tópicos se ha mostrado.
 #### Despues de haber ejecutado el servicio de web sockets
