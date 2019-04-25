@@ -225,6 +225,7 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
 
 5) Consulte 'benchmarks' comparativos entre RabbitMQ y ActiveMQ, y analice cual sería más conveniente.
 
+![comparativa](https://user-images.githubusercontent.com/23700749/56742627-bbeac480-673a-11e9-99a8-f5c80f8d3c97.PNG)
 
 
 ## Autores
