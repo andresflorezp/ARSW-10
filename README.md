@@ -210,6 +210,19 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
 ```
 
 4) Ejecute la aplicación y revise su funcionamiento. Acceda a la consola de administración de CloudAMQP y revise qué efectivamente se estén creando los tópicos correspondientes.
+### Canales
+
+![Canales](https://user-images.githubusercontent.com/23700749/56741923-619d3400-6739-11e9-9cd9-6a83b1af5f03.PNG)
+
+### Conexiones
+
+![connections](https://user-images.githubusercontent.com/23700749/56741948-724daa00-6739-11e9-8a7e-a9e8b280e0d2.PNG)
+
+### Progreso
+
+![progress](https://user-images.githubusercontent.com/23700749/56741967-809bc600-6739-11e9-8d0c-e7d2ee08d08b.PNG)
+
+
 5) Consulte 'benchmarks' comparativos entre RabbitMQ y ActiveMQ, y analice cual sería más conveniente.
 
 
