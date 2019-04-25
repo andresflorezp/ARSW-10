@@ -1,10 +1,12 @@
+package edu.eci.arsw.collabpaint;
 import java.util.logging.Logger;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
-import org.springframework.util.AntPathMatcher;
 import org.springframework.web.socket.config.annotation.AbstractWebSocketMessageBrokerConfigurer;
 import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
+
 
 @Configuration
 @EnableWebSocketMessageBroker
@@ -19,7 +21,6 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
         setSystemLogin("oeuoqwkw").
         setSystemPasscode("psgY4_gYfss-xyAQmwWvg6tAlXIaXHJ_").
         setVirtualHost("oeuoqwkw");
-
         config.setApplicationDestinationPrefixes("/app");        
     }
 

@@ -21,3 +21,12 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+/.gitignore
+/.mvn/
+/Models.asta
+/README.md
+/img/
+/mvnw
+/mvnw.cmd
+/pom.xml
+/src/
