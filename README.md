@@ -41,7 +41,7 @@ Despues de clonar el archivo para correrlo con:
 9) Al haber usado la aplicación, consulte nuevamente la consola Web de ActiveMQ, y revise qué información de tópicos se ha mostrado.
 #### Despues de haber ejecutado el servicio de web sockets
 
-![Screenshot](imagenes/Topics_mq.png)
+![Topics in active mq](https://user-images.githubusercontent.com/23700749/56736063-cf8f2e80-672c-11e9-870c-cc8bda495b92.PNG)
 
 ### Parte 2
 
