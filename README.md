@@ -36,12 +36,12 @@ Despues de clonar el archivo para correrlo con:
 
 #### Corriendo el Activemq
 
-![Corriendo el servicio](./imagenes/Active_mq.png)
+![Screenshot](imagenes/Active_mq.png)
 
 9) Al haber usado la aplicación, consulte nuevamente la consola Web de ActiveMQ, y revise qué información de tópicos se ha mostrado.
 #### Despues de haber ejecutado el servicio de web sockets
 
-![Topicos](./imagenes/Topics_mq.png)
+![Screenshot](imagenes/Topics_mq.png)
 
 ### Parte 2
 
@@ -96,7 +96,7 @@ http {
 
 ### Corriendo el servicio
 
-![Corriendo el servicio](./imagenes/run_service.png)
+![Screenshot](imagenes/run_service.png)
 
 3) Revise en la documentación de NGINX, cómo cambiar la estrategía por defecto del balanceador por la estrategia 'least_conn'.
 
@@ -144,16 +144,16 @@ http {
 
 ### Mirando los logs corridos en chrome y firefox
 
-![Corriendo el servicio](./imagenes/logs.png)
+![Screenshot](imagenes/logs.png)
 
 
 5) Apague una de las dos aplicaciones (Ctrl+C), y verifique qué pasa con el cliente que estaba trabajando con el servidor recién apagado.
 
-![Cerrando Cliente](/imagenes/close.png)
+![Screenshot](imagenes/close.png)
 
 6) Ajuste la aplicación para que la misma no tenga 'quemadas' datos como el host del servidor de mensajería o el puerto. Para esto revise la discusión hecha en StackOverflow al respecto.
 
-![Cerrando Cliente](/imagenes/conf.d.png)
+![Screenshot](imagenes/conf.d.png)
 
 
 
