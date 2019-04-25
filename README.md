@@ -96,7 +96,7 @@ http {
 
 ### Corriendo el servicio
 
-![Screenshot](imagenes/run_service.png)
+![corriendo el servicio de nginx](https://user-images.githubusercontent.com/23700749/56736141-02392700-672d-11e9-88cd-b3cf75e628d7.PNG)
 
 3) Revise en la documentación de NGINX, cómo cambiar la estrategía por defecto del balanceador por la estrategia 'least_conn'.
 
@@ -144,16 +144,17 @@ http {
 
 ### Mirando los logs corridos en chrome y firefox
 
-![Screenshot](imagenes/logs.png)
+![balanceo en chrome-mozilla](https://user-images.githubusercontent.com/23700749/56736169-1715ba80-672d-11e9-9e4a-50741a792863.PNG)
 
 
 5) Apague una de las dos aplicaciones (Ctrl+C), y verifique qué pasa con el cliente que estaba trabajando con el servidor recién apagado.
 
-![Screenshot](imagenes/close.png)
+![Al cerrar una app](https://user-images.githubusercontent.com/23700749/56736197-28f75d80-672d-11e9-93f2-238f5cf247bf.PNG)
 
 6) Ajuste la aplicación para que la misma no tenga 'quemadas' datos como el host del servidor de mensajería o el puerto. Para esto revise la discusión hecha en StackOverflow al respecto.
 
-![Screenshot](imagenes/conf.d.png)
+![correr en conf d](https://user-images.githubusercontent.com/23700749/56736233-3dd3f100-672d-11e9-8dac-2e70c72a2d13.PNG)
+
 
 
 
