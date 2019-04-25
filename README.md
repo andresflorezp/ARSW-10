@@ -228,29 +228,6 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
 ![comparativa](https://user-images.githubusercontent.com/23700749/56742627-bbeac480-673a-11e9-99a8-f5c80f8d3c97.PNG)
 
 
-
-## Parte 4
-
-### Haga el diagrama de despliegue (incluyendo el detalle de los componentes de cada servidor) para la versión original del laboratorio.
-
-![Diagrama_Despliegue_Inicial](https://user-images.githubusercontent.com/23700749/56745578-4255d500-6740-11e9-881b-f48dcf7c630d.PNG)
-
-
-### Haga el diagrama de despliegue (incluyendo el detalle de componentes) para la nueva versión del laboratrio. En este caso suponga que los servidores no están en máquinas virtuales sino en máquinas reales.
-
-#### Desde Nginx
-
-![nginx](https://user-images.githubusercontent.com/23700749/56745612-51d51e00-6740-11e9-84f8-1b65f97151d6.PNG)
-
-#### Desde RabitMQ
-
-
-![cloud](https://user-images.githubusercontent.com/23700749/56745679-6b766580-6740-11e9-88c5-0f459ac4626e.PNG)
-
-
-### Analice e indique, con la nueva arquitectura planteada qué problemas o inconsistencias se podrían presentar con la aplicación?. Qué solución plantearía al respecto?
-
-
 ## Autores
 
 * **Andres Giovanne Florez Perez**  ARSW-LAB10 - [andresflorezp](https://github.com/andresflorezp)
