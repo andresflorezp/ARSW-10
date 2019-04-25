@@ -156,6 +156,62 @@ http {
 ![correr en conf d](https://user-images.githubusercontent.com/23700749/56736233-3dd3f100-672d-11e9-8dac-2e70c72a2d13.PNG)
 
 
+## Parte 3
+
+En su ejercicio, haga una rama llamada 'cloud-based-mom'. En ésta, configure su aplicación para que en lugar de usar el servidor JMeter, haga uso del servicio en RabbitMQ en la nube de CloudAMQP, el cual también es compatible con STOMP. Para esto:
+
+1) Regístrese en la plataforma y cree una instancia gratuita (Lemur).
+
+
+![Incio_lemur](https://user-images.githubusercontent.com/23700749/56738198-b937a180-6731-11e9-9e63-71e9bf1a53c4.PNG)
+
+2) Abra la consola de configuración, y revise las credenciales de acceso.
+
+
+![account_lemur](https://user-images.githubusercontent.com/23700749/56738179-af15a300-6731-11e9-8aa3-b686cd507d40.PNG)
+3) Abra el siguiente ejemplo y revise cómo se configuró el 'relay-broker' para usar el servicio de mensajería de CloudAMQP.
+
+### Codigo Cambiado
+``` java
+import java.util.logging.Logger;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.messaging.simp.config.MessageBrokerRegistry;
+import org.springframework.util.AntPathMatcher;
+import org.springframework.web.socket.config.annotation.AbstractWebSocketMessageBrokerConfigurer;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
+
+@Configuration
+@EnableWebSocketMessageBroker
+public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry config) {
+        //config.enableSimpleBroker("/topic");
+        config.enableStompBrokerRelay("/topic/").setRelayHost("clam.rmq.cloudamqp.com").setRelayPort(61613).
+        setClientLogin("oeuoqwkw").
+        setClientPasscode("psgY4_gYfss-xyAQmwWvg6tAlXIaXHJ_").
+        setSystemLogin("oeuoqwkw").
+        setSystemPasscode("psgY4_gYfss-xyAQmwWvg6tAlXIaXHJ_").
+        setVirtualHost("oeuoqwkw");
+
+        config.setApplicationDestinationPrefixes("/app");        
+    }
+
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        //registry.addEndpoint("/stompendpoint").withSockJS();
+        registry.addEndpoint("/stompendpoint").setAllowedOrigins("*").withSockJS();
+    }
+    
+
+}
+
+```
+
+4) Ejecute la aplicación y revise su funcionamiento. Acceda a la consola de administración de CloudAMQP y revise qué efectivamente se estén creando los tópicos correspondientes.
+5) Consulte 'benchmarks' comparativos entre RabbitMQ y ActiveMQ, y analice cual sería más conveniente.
+
 
 
 ## Autores
