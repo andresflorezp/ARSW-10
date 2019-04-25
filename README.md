@@ -1,17 +1,19 @@
-# Laboratorio 9 Broker de mensajes stomp con websockets
-## El link de Heroku es
-http://shop-files.herokuapp.com/canva.html
+# Laboratorio 10 Escalamiento con balanceo de carga
 
 ## Empezando
 
 >Para clonar el archivo 
 
-git clone https://github.com/nontoa/ARSW-LAB9.git
+git clone https://github.com/andresflorezp/ARSW-LAB10.git
 >
 ### Prerrequisitos
 * Maven
 * Java
 * Git
+* Maquinas Virtuales 
+* Servicio Active MQ (Message Broker)
+* Servicio nginx (Balanceador de carga)
+* CloudAMPQ (Balanceador de carga en la nube)
 
 
 ### Instalación
@@ -32,7 +34,7 @@ Despues de clonar el archivo para correrlo con:
 
 * **Juan Nicolas Nontoa Caballero**  ARSW-LAB9 - [nontoa] (https://github.com/nontoa)
 
-Consulte también la lista de [colaboradores] (https://github.com/nontoa/ARSW-LAB9/graphs/contributors) que participaron en este proyecto.
+Consulte también la lista de [colaboradores] (https://github.com/andresflorezp/ARSW-LAB10/graphs/contributors) que participaron en este proyecto.
 
 ## licencia
 
