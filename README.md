@@ -247,6 +247,22 @@ public class CollabPaintWebSocketConfig extends AbstractWebSocketMessageBrokerCo
 
 ### Analice e indique, con la nueva arquitectura planteada qué problemas o inconsistencias se podrían presentar con la aplicación?. Qué solución plantearía al respecto?
 
+
+#### Problemas con NGINX
+
+> Cabe resaltar que el principal problema esta en el balanceador de carga porque si el balanceador de carga se cae en este caso en el servidor linux todo se va a caer es decir no va a permitir distribuir las peticiones.
+
+> **Solucion:** Colocar dos balanceadores de carga
+
+
+#### Problemas con Rabbit MQ
+> De igual forma Rabbit MQ pero este al estar en la nube si se cae el internet en la parte del RABBIT MQ se va a caer todo
+
+> **Solucion:** Colocar dos balanceadores de carga con diferente ISP(Provedor de Servicio)
+
+
+
+
 ## Autores
 
 * **Andres Giovanne Florez Perez**  ARSW-LAB10 - [andresflorezp](https://github.com/andresflorezp)
